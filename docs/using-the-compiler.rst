@@ -206,7 +206,10 @@ Output Description
                 linkReferences: {
                   "libraryFile.sol": {
                     // Byte offsets into the bytecode. Linking replaces the 20 bytes located there.
-                    "Library1": [1, 200, 80]
+                    "Library1": [
+                      { start: 0, end: 20 },
+                      { start: 200, end: 220 }
+                    ]
                   }
                 }
               }
